@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ATM Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="atm">
+    <div id="screen" class="screen">
+        <div id="screen-text">Welcome — Insert Card</div>
+    </div>
+
+    <div class="controls">
+        <button id="insertBtn">Insert Card</button>
+    </div>
+
+    <div id="ui" class="hidden">
+        <div id="pinArea" class="panel">
+            <h3>Enter PIN</h3>
+            <input id="pinInput" type="password" maxlength="4" />
+            <button id="pinSubmit">Submit PIN</button>
+        </div>
+
+        <div id="menuArea" class="panel hidden">
+            <h3>Main Menu</h3>
+            <button id="btnBalance">Check Balance</button>
+            <button id="btnDeposit">Deposit</button>
+            <button id="btnWithdraw">Withdraw</button>
+            <button id="btnHistory">Transactions</button>
+            <button id="btnLogout">Logout</button>
+        </div>
+
+        <div id="actionArea" class="panel hidden">
+            <div id="actionContent"></div>
+            <button id="actionBack">Back</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

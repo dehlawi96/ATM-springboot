@@ -1,0 +1,60 @@
+:root {
+    --bg: linear-gradient(135deg,#081326,#0b2240);
+    --card: rgba(255,255,255,0.06);
+    --accent: #1dd3b0;
+    --muted: #cfe8e4;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: Inter, Arial, sans-serif;
+    background: var(--bg);
+    color:var(--muted);
+}
+
+.atm {
+    width: 420px;
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+}
+
+.screen {
+    height: 140px;
+    background: #041022;
+    border-radius: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 12px;
+    border: 1px solid rgba(29,211,176,0.08);
+}
+
+.controls { text-align:center; margin-bottom:12px; }
+button {
+    background: var(--accent);
+    border: none;
+    padding: 10px 14px;
+    margin: 6px;
+    color: #012;
+    font-weight:600;
+    border-radius:8px;
+    cursor:pointer;
+}
+.hidden { display:none; }
+
+.panel { margin-top: 8px; padding:10px; background: var(--card); border-radius:8px; }
+input[type="password"] {
+    padding:8px;
+    width:120px;
+    border-radius:6px;
+    border:none;
+    margin-right:8px;
+}
+#actionContent { margin-bottom:10px; }
